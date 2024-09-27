@@ -11,29 +11,23 @@ operand1= get_number(1)
 operand2= get_number(2)
 sign=input("Sign(+,-,*,/,%): ")
 
-print(operand1, sign, operand2)
-
 result=0
 
 if sign=='+':
-    sum=operand1+operand2
-    print(sum)
+    result=operand1+operand2
 elif sign=='-':
-    subtract=operand1-operand2
-    print(subtract)
+    result=operand1-operand2
 elif sign=='*':
-    mul=operand1*operand2
-    print(mul)
+    result=operand1*operand2
 elif sign=='/':
     if operand2 != 0:
-        divide=operand1/operand2
-        print(divide)
+        result=operand1/operand2
     else:
         print('Divison by zero.')
 
 elif sign=='%':
-    rem=operand1%operand2
-    print(rem)
+    result=operand1%operand2
 else:
     print('Invalid Sign')
     
+print(result)
